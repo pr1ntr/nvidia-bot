@@ -125,7 +125,7 @@ class Amazon:
             log.info("Already logged in")
         else:
             log.info("Lets log in.")
-             is_smile = "smile" in AMAZON_URLS["BASE_URL"]
+            is_smile = "smile" in AMAZON_URLS["BASE_URL"]
             xpath = '//*[@id="ge-hello"]/div/span/a' if is_smile else '//*[@id="nav-link-accountList"]/div/span'
             selenium_utils.button_click_using_xpath(
                 self.driver,
